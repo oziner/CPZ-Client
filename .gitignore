@@ -40,5 +40,3 @@ electron.d.ts
 
 # Eslint
 .eslintcache*
-.eslintrc
-.eslintignore
