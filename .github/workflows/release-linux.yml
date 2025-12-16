@@ -10,11 +10,11 @@ jobs:
 
     steps:
     - name: Wait for package update
-      uses: lewagon/wait-on-check-action@v1.4.1
+      uses: ivan-sre/action-wait-for-check@v5.0.0
       id: wait-for-commit
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        check-name: update
+        token: ${{ secrets.GITHUB_TOKEN }}
+        checkName: update
         ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
     - uses: actions/checkout@v6
