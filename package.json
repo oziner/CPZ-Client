@@ -80,7 +80,6 @@
     "electron-prompt": "^1.7.0",
     "electron-store": "^8.2.0",
     "electron-updater": "^6.6.2",
-    "node-gyp": "^12.1.0",
     "patch-package": "^8.0.1"
   },
   "//": {
