@@ -47,6 +47,7 @@ jobs:
             ./dist/*.exe
             ./dist/*.blockmap
             ./dist/latest.yml
+          retention-days: 1
 
       - name: Upload Linux Artifacts
         if: matrix.os == 'ubuntu-latest'
@@ -57,6 +58,7 @@ jobs:
             ./dist/*.deb
             ./dist/*.AppImage
             ./dist/latest-linux.yml
+          retention-days: 1
 
       - name: Upload Mac Artifacts
         if: matrix.os == 'macos-latest'
@@ -68,3 +70,4 @@ jobs:
             ./dist/*.blockmap
             ./dist/*.zip
             ./dist/latest-mac.yml
+          retention-days: 1
