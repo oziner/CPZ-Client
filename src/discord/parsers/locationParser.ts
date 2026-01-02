@@ -63,7 +63,7 @@ export const parseAndUpdateLocation = async (store: Store, params: any) => {
 
     // Edge case for differentiating The Mine room from Cart Surfer.
     if (match === 'mine' && url.includes(SWF_GAMES_PATH)) {
-        match = 'minecar1';
+        match = 'Cart Surfer';
     }
 
     // The location hasn't changed.
